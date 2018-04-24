@@ -56,8 +56,7 @@ def run(a_str, b_str, *, print_output=True):
         origin_expr += " - " + b_str[1:]
     elif b > 0:
         origin_expr += " + " + b_str
-
-
+    
     first_expr = minimize_expr(1, a, has_unknown=True)
     second_expr = minimize_expr(-b, a, neg_val="- ")
 
@@ -96,7 +95,7 @@ def test_case():
 
 
 if __name__ == "__main__":
-    test_case()
+    # test_case()
     
     inp = input("ax + b 의 함수에서 a값과 b값을 입력하세요 : ").split()
     a_str, b_str = inp[0], inp[1]
